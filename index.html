@@ -13,17 +13,19 @@
 
 <body>
 
-<!-- background -->
+    <!-- background -->
+<!-- Background video and music toggle icons -->
 
-<video autoplay muted loop id="myVideo">
-    <source src="80's Retro Style Loop - 60fps - 4k.mp4">
-</video>
-<div id="toggleMusicSection">
-<i class="fa-solid fa-volume-high toggleMusicOff"></i>
-<i class="fa-solid fa-volume-xmark toggleMusicOn"></i>
-</div> 
+    <video autoplay muted loop id="myVideo">
+        <source src="80's Retro Style Loop - 60fps - 4k.mp4">
+    </video>
+    <div id="toggleMusicSection">
+        <i class="fa-solid fa-volume-high toggleMusicOff"></i>
+        <i class="fa-solid fa-volume-xmark toggleMusicOn"></i>
+    </div>
 
-<!-- Beginning Pop Up -->
+    <!-- Beginning Pop Up -->
+<!-- This doesn't actually do anything, if I had more time it'd have a function but for now it exists just to style the pop ups -->
 
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -34,18 +36,6 @@
             <div class="modal-body">
                 <p id="MB-Icon-selection-p">Please select the icon you wish to use for the game</p>
 
-                <!-- Commenting this icon selection feature out for now -->
-                <!-- <div class="icon-selection">
-                <img id="testa-pic" src="testarossa copy.png">
-                <label for="testarossa">
-                     <input type="radio" name="icon" id="testarossa" value="testarossa">Testarossa
-                    </label>
-                
-                <img id="roller-pic" src="roller2rolling copy.png">
-                <label for="roller-blades"> 
-                    <input type="radio" name="icon" id="roller-blades" value="RB">Roller Blades
-                    </label>
-            </div> -->
             </div>
 
             <div class="modal-footer">
@@ -54,6 +44,8 @@
         </div>
 
     </div>
+
+<!-- Pop Ups shown when a game comes to its conclusion -->
 
     <!-- X WINS POPUP -->
     <div id="xModal" class="modal">
@@ -185,19 +177,19 @@
             <div id="drawScoreTotal">0</div>
 
             <div id="gamesPlayed">
-                    <p class="playerScoresP">Total Games!</p>
-                </div>
-                <div id="totalScore">0</div>
+                <p class="playerScoresP">Total Games!</p>
+            </div>
+            <div id="totalScore">0</div>
 
-                <div id="prevWinner">
-                    <p class="playerScoresP">Last Match</p>
-                </div>
-                <div id="prevWinnerTotal">Insert Coin!</div>    
-            
+            <div id="prevWinner">
+                <p class="playerScoresP">Last Match</p>
+            </div>
+            <div id="prevWinnerTotal">Insert Coin!</div>
+
         </div>
     </div>
 
-    
+
 </body>
 
 </html>
