@@ -65,8 +65,9 @@ playButton.addEventListener("click", playGameFunction);
 
 let playerOne = "X";
 let playerTwo = "O";
-
 let currentPlayer = playerOne;
+
+
 
 // bringing the grid squares into the DOM
 const tiles = document.querySelectorAll(".square");
@@ -147,16 +148,22 @@ const squareSeven = document.querySelector(".seven");
 const squareEight = document.querySelector(".eight");
 const squareNine = document.querySelector(".nine");
 
+
+let totalScore = document.querySelector("#totalScore");
+
 let xWins = 0;
 let oWins = 0;
 let draw = 0;
 let gamesPlayed = 0;
 
+let prevWinnerTotal = document.querySelector("#prevWinnerTotal");
+let currentWinner = prevWinnerTotal;
 
 const whosWinningThisThingAnyway = function () {
     let xScoreTotal = document.querySelector("#xScoreTotal");
     let oScoreTotal = document.querySelector("#oScoreTotal");
     let drawScoreTotal = document.querySelector("#drawScoreTotal");
+   
 
 
     if (
@@ -165,14 +172,20 @@ const whosWinningThisThingAnyway = function () {
         if (currentPlayer === playerOne) {
             xWins = ++xWins;
             xScoreTotal.textContent = xWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("X wins!")
+            prevWinnerTotal.textContent = `${playerOne} Won!`;
             xWinsFunction();
         }
 
         else if (currentPlayer === playerTwo) {
             oWins = ++oWins;
             oScoreTotal.textContent = oWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("O wins!")
+            prevWinnerTotal.textContent = `${playerTwo} Won!`;
             oWinsFunction();
         }
     }
@@ -183,13 +196,19 @@ const whosWinningThisThingAnyway = function () {
         if (currentPlayer === playerOne) {
             xWins = ++xWins;
             xScoreTotal.textContent = xWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("X wins!")
+            prevWinnerTotal.textContent = `${playerOne} Won!`;
             xWinsFunction();
         }
         else if (currentPlayer === playerTwo) {
             oWins = ++oWins;
             oScoreTotal.textContent = oWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("O wins!")
+            prevWinnerTotal.textContent = `${playerTwo} Won!`;
             oWinsFunction();
         }
     }
@@ -199,13 +218,19 @@ const whosWinningThisThingAnyway = function () {
         if (currentPlayer === playerOne) {
             xWins = ++xWins;
             xScoreTotal.textContent = xWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("X wins!")
+            prevWinnerTotal.textContent = `${playerOne} Won!`;
             xWinsFunction();
         }
         else if (currentPlayer === playerTwo) {
             oWins = ++oWins;
             oScoreTotal.textContent = oWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("O wins!")
+            prevWinnerTotal.textContent = `${playerTwo} Won!`;
             oWinsFunction();
         }
     }
@@ -215,13 +240,19 @@ const whosWinningThisThingAnyway = function () {
         if (currentPlayer === playerOne) {
             xWins = ++xWins;
             xScoreTotal.textContent = xWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("X wins!")
+            prevWinnerTotal.textContent = `${playerOne} Won!`;
             xWinsFunction();
         }
         else if (currentPlayer === playerTwo) {
             oWins = ++oWins;
             oScoreTotal.textContent = oWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("O wins!")
+            prevWinnerTotal.textContent = `${playerTwo} Won!`;
             oWinsFunction();
         }
     }
@@ -231,13 +262,19 @@ const whosWinningThisThingAnyway = function () {
         if (currentPlayer === playerOne) {
             xWins = ++xWins;
             xScoreTotal.textContent = xWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("X wins!")
+            prevWinnerTotal.textContent = `${playerOne} Won!`;
             xWinsFunction();
         }
         else if (currentPlayer === playerTwo) {
             oWins = ++oWins;
             oScoreTotal.textContent = oWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("O wins!")
+            prevWinnerTotal.textContent = `${playerTwo} Won!`;
             oWinsFunction();
         }
     }
@@ -247,13 +284,19 @@ const whosWinningThisThingAnyway = function () {
         if (currentPlayer === playerOne) {
             xWins = ++xWins;
             xScoreTotal.textContent = xWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("X wins!")
+            prevWinnerTotal.textContent = `${playerOne} Won!`;
             xWinsFunction();
         }
         else if (currentPlayer === playerTwo) {
             oWins = ++oWins;
             oScoreTotal.textContent = oWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("O wins!")
+            prevWinnerTotal.textContent = `${playerTwo} Won!`;
             oWinsFunction();
         }
     }
@@ -263,13 +306,19 @@ const whosWinningThisThingAnyway = function () {
         if (currentPlayer === playerOne) {
             xWins = ++xWins;
             xScoreTotal.textContent = xWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("X wins!")
+            prevWinnerTotal.textContent = `${playerOne} Won!`;
             xWinsFunction();
         }
         else if (currentPlayer === playerTwo) {
             oWins = ++oWins;
             oScoreTotal.textContent = oWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("O wins!")
+            prevWinnerTotal.textContent = `${playerTwo} Won!`;
             oWinsFunction();
         }
     }
@@ -279,14 +328,20 @@ const whosWinningThisThingAnyway = function () {
         if (currentPlayer === playerOne) {
             xWins = ++xWins;
             xScoreTotal.textContent = xWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("X wins!")
+            prevWinnerTotal.textContent = `${playerOne} Won!`;
             xWinsFunction();
         }
 
         else if (currentPlayer === playerTwo) {
             oWins = ++oWins;
             oScoreTotal.textContent = oWins;
+            gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
             console.log("O wins!")
+            prevWinnerTotal.textContent = `${playerTwo} Won!`;
             oWinsFunction();
         }
     }
@@ -294,6 +349,9 @@ const whosWinningThisThingAnyway = function () {
     else if (occupiedTiles.length === 9) {
         draw = ++draw;
         drawScoreTotal.textContent = draw;
+        gamesPlayed = xWins + oWins + draw;
+            totalScore.textContent = gamesPlayed;
+            prevWinnerTotal.textContent = `DRAW`;
         drawFunction();
 
 

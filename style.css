@@ -14,6 +14,7 @@ body {
     font-family: "ARCADE";
     color: #fff;
 }
+
 /* video background */
 
 #myVideo {
@@ -115,7 +116,11 @@ body {
 }
 
 @keyframes blink {
-    50%{color: #F2BA52};
+    50% {
+        color: #F2BA52
+    }
+
+    ;
 }
 
 .insert-coin {
@@ -146,7 +151,7 @@ body {
 
 .toggleMusicOn,
 .toggleMusicOff {
-    
+
     color: rgb(255, 255, 255);
 }
 
@@ -177,7 +182,11 @@ body {
 }
 
 @keyframes blink {
-    50%{background-color: #F2BA52};
+    50% {
+        background-color: #F2BA52
+    }
+
+    ;
 }
 
 #WT2 {
@@ -210,6 +219,7 @@ body {
     font-size: 3em;
     margin: 0rem;
 }
+
 /* Restart Button */
 
 #restart-button-container {
@@ -218,7 +228,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #restart-button {
@@ -254,7 +264,7 @@ body {
     width: calc(100% - 10px);
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    
+
 }
 
 /* Setting up the borders */
@@ -329,13 +339,13 @@ body {
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
 }
 
 #SB2 {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 3;
 
 }
 
@@ -349,39 +359,54 @@ body {
 
 #SBx {
     grid-row: 2;
-    grid-column: 1;
-    
+    grid-column: 2;
+
 }
 
 #xScoreTotal {
     grid-row: 3;
-    grid-column: 1;
+    grid-column: 2;
 }
 
 #SBo {
     grid-row: 2;
-    grid-column: 3;
-    
+    grid-column: 4;
+
 }
 
 #oScoreTotal {
     grid-row: 3;
-    grid-column: 3;
+    grid-column: 4;
 }
 
 #SBd {
     grid-row: 2;
-    grid-column: 2;
+    grid-column: 3;
 }
 
 #drawScoreTotal {
     grid-row: 3;
-    grid-column: 2;
+    grid-column: 3;
 }
 
 #gamesPlayed {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#totalScore {
     grid-row: 3;
     grid-column: 1;
+}
+
+#prevWinner {
+    grid-row: 2;
+    grid-column: 5;
+}
+
+#prevWinnerTotal {
+    grid-row: 3;
+    grid-column: 5;
 }
 
 .playerScoresP {
@@ -393,10 +418,12 @@ body {
 
 #xScoreTotal,
 #oScoreTotal,
-#drawScoreTotal {
+#drawScoreTotal,
+#totalScore,
+#prevWinnerTotal {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 0;
     font-size: 1.5em;
-} 
+}
