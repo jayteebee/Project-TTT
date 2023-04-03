@@ -1,14 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4c03bc1f07.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
-    
+
+<!-- background -->
+
+<video autoplay muted loop id="myVideo">
+    <source src="80's Retro Style Loop - 60fps - 4k.mp4">
+</video>
+<div id="toggleMusicSection">
+<i class="fa-solid fa-volume-high toggleMusicOff"></i>
+<i class="fa-solid fa-volume-xmark toggleMusicOn"></i>
+</div> 
+
+<!-- Beginning Pop Up -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome to 80's Tic Tac Toe</h2>
+            </div>
+
+            <div class="modal-body">
+                <p id="MB-Icon-selection-p">Please select the icon you wish to use for the game</p>
+
+                <!-- Commenting this icon selection feature out for now -->
+                <!-- <div class="icon-selection">
+                <img id="testa-pic" src="testarossa copy.png">
+                <label for="testarossa">
+                     <input type="radio" name="icon" id="testarossa" value="testarossa">Testarossa
+                    </label>
+                
+                <img id="roller-pic" src="roller2rolling copy.png">
+                <label for="roller-blades"> 
+                    <input type="radio" name="icon" id="roller-blades" value="RB">Roller Blades
+                    </label>
+            </div> -->
+            </div>
+
+            <div class="modal-footer">
+                <button id="start-game">Start Game</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- X WINS POPUP -->
+    <div id="xModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="wins">X Wins!</h2>
+            </div>
+
+            <div class="modal-body">
+                <p class="insert-coin">Insert Coin To Play Again!</p>
+            </div>
+
+            <div class="modal-footer">
+                <button id="xRestart-game">Insert Coin</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- O WINS POPUP -->
+
+    <div id="oModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="wins">O Wins!</h2>
+            </div>
+
+            <div class="modal-body">
+                <p class="insert-coin">Insert Coin To Play Again!</p>
+            </div>
+
+            <div class="modal-footer">
+                <button id="oRestart-game">Insert Coin</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- DRAW POPUP -->
+    <div id="drawModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="wins">Draw!</h2>
+            </div>
+
+            <div class="modal-body">
+                <p class="insert-coin">Insert Coin To Play Again!</p>
+            </div>
+
+            <div class="modal-footer">
+                <button id="dRestart-game">Insert Coin</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Who's turn is it? -->
+    <div id="whos-turn-is-it-outer">
+        <div id="whos-turn-is-it-inner">
+            <div id="WT3">
+                <p id="WT3Text">Whose turn is it?</p>
+            </div>
+            <div id="WT1">
+                <p class="turn">X's Turn</p>
+            </div>
+            <div id="WT2">
+                <p class="turn">O's Turn</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Restart Button -->
+    <div id="restart-button-container">
+        <button id="restart-button">Restart <br> Game</button>
+    </div>
+
+
+    <!-- Game Grid -->
+    <div id="outer-game-grid">
+
+        <div id="inner-game-grid">
+
+            <div class="square one"></div>
+            <div class="square two"></div>
+            <div class="square three"></div>
+            <div class="square four"></div>
+            <div class="square five"></div>
+            <div class="square six"></div>
+            <div class="square seven"></div>
+            <div class="square eight"></div>
+            <div class="square nine"></div>
+
+        </div>
+    </div>
+
+
+    <!-- Play Button -->
+    <div id="play-button-container">
+        <button id="play-button">Insert <br> Coin!</button>
+    </div>
+
+
+    <!-- Score Board -->
+    <div id="outer-score-board">
+        <div id="inner-score-board">
+
+            <div id="SB2">
+                <p id="scoresP">SCORES!</p>
+            </div>
+
+            <div id="SBx">
+                <p class="playerScoresP">X's Score</p>
+            </div>
+
+            <div id="xScoreTotal">0</div>
+
+
+            <div id="SBo">
+                <p class="playerScoresP">O's Score</p>
+            </div>
+            <div id="oScoreTotal">0</div>
+
+            <div id="SBd">
+                <p class="playerScoresP">Draws</p>
+            </div>
+            <div id="drawScoreTotal">0</div>
+
+        </div>
+    </div>
+
+    <div id="gamesPlayed">
+        <p class="playerScoresP">Total Games!</p>
+    </div>
+    <div id="totalScore">0</div>
 </body>
+
 </html>
